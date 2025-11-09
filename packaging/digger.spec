@@ -1,5 +1,5 @@
 Name:           digger
-Version:        2.1.4
+Version:        2.4.0
 Release:        %autorelease
 Summary:        Digger - Advanced DNS Lookup Tool
 
@@ -15,6 +15,7 @@ BuildRequires:  pkgconfig(libadwaita-1) >= 1.0
 BuildRequires:  pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(gee-0.8)
+BuildRequires:  pkgconfig(libsoup-3.0)
 
 Requires:       hicolor-icons-theme
 Requires:       glib2
@@ -45,8 +46,7 @@ and DNS-over-HTTPS support.
 %{_datadir}/applications/io.github.tobagin.digger.desktop
 %{_datadir}/%{name}/
 %{_datadir}/glib-2.0/schemas/io.github.tobagin.digger.gschema.xml
-%{_datadir}/icons/hicolor/*/apps/io.github.tobagin.digger.png
-%{_datadir}/icons/hicolor/scalable/apps/io.github.tobagin.digger-*.svg
+%{_datadir}/icons/hicolor/scalable/apps/io.github.tobagin.digger*.svg
 %{_datadir}/metainfo/io.github.tobagin.digger.metainfo.xml
 
 
