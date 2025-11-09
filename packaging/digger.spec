@@ -16,6 +16,7 @@ BuildRequires:  pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(gio-2.0)
 BuildRequires:  pkgconfig(gee-0.8)
 BuildRequires:  pkgconfig(libsoup-3.0)
+BuildRequires:  libappstream-glib
 
 Requires:       hicolor-icons-theme
 Requires:       glib2
@@ -39,6 +40,10 @@ and DNS-over-HTTPS support.
 %meson_install
 
 
+%check
+appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/*.metainfo.xml
+
+
 %files
 %license LICENSE
 %doc README.md
@@ -47,8 +52,7 @@ and DNS-over-HTTPS support.
 %{_datadir}/%{name}/
 %{_datadir}/glib-2.0/schemas/io.github.tobagin.digger.gschema.xml
 %{_datadir}/icons/hicolor/scalable/apps/io.github.tobagin.digger*.svg
-%{_datadir}/metainfo/io.github.tobagin.digger.metainfo.xml
-
+%{_metainfodir}/io.github.tobagin.digger.metainfo.xml
 
 
 %changelog
