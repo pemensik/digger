@@ -20,6 +20,7 @@ BuildRequires:  libappstream-glib
 
 Requires:       hicolor-icons-theme
 Requires:       glib2
+Requires:       %{_bindir}/dig
 
 %description
 A powerful and modern DNS lookup tool built with Vala, GTK4, and libadwaita.
