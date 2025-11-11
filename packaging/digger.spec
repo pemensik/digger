@@ -18,7 +18,7 @@ BuildRequires:  pkgconfig(gee-0.8)
 BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:  libappstream-glib
 
-Requires:       hicolor-icons-theme
+Requires:       hicolor-icon-theme
 Requires:       glib2
 Requires:       %{_bindir}/dig
 
